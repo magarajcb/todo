@@ -12,7 +12,7 @@ const taskSchema=new mongoose.Schema({
         maxlength:[1000,"Words cannot excedd this limit"],
         trim:true
     },
-    duedate:{
+    dueDate:{
         type:Date,
         required:[true,"Due date is important in Todo list"]
     },
@@ -29,5 +29,6 @@ const taskSchema=new mongoose.Schema({
     
 },
 {
-        timetamps:true,
+        timestamps:true,
     })
+    module.exports = mongoose.model("Task", taskSchema);

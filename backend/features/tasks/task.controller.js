@@ -17,7 +17,7 @@ const createTask=async(req,res)=>{
 const getTask=async (req,res)=>{
     try{
         const task=await taskService.getTsk()
-        res.status(201).josn({
+        res.status(201).json({
             message:"Task fetched",
             data:task
         })
@@ -32,7 +32,7 @@ const getTask=async (req,res)=>{
 const getTaskById=async (req,res)=>{
     try{
         const task=await taskService.getTskById(req.params.id)
-        res.staus(200).josn({
+        res.status(200).json({
             data:task
         })
     }

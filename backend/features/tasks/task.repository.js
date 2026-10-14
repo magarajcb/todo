@@ -14,4 +14,4 @@ const updateTask=async (id,update)=>{
 const deleteTask=async (id)=>{
     return await Task.findByIdAndDelete(id)
 }
-module.exports={createTask,getTask,updateTask,deleteTask}
+module.exports={createTask,getTask, findTask,updateTask,deleteTask}
