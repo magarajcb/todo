@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setFormData, resetForm } from "./taskSlice";
-import { useTasks } from "./useTasks";
+import { setFormData, resetForm } from "../../store/taskSlice";
+import { useTasks } from "../../hooks/useTasks.js";
 
 function TaskForm() {
   const dispatch = useDispatch();

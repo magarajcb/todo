@@ -1,15 +1,7 @@
-import TaskForm from "./features/tasks/TaskForm";
-import TaskList from "./features/tasks/TaskList";
+import TasksPage from "./Pages/Tasks/tasks";
 
 function App() {
-  return (
-    <main>
-      <h1>Task Planner</h1>
-      <TaskForm />
-      <hr />
-      <TaskList />
-    </main>
-  );
+  return <TasksPage />;
 }
 
 export default App;

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { editTask } from "./taskSlice";
-import { useTasks } from "./useTasks";
+import { editTask } from "../../store/taskSlice";
+import { useTasks } from "../../hooks/useTasks.js";
 
 function TaskList() {
   const dispatch = useDispatch();

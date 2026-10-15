@@ -6,7 +6,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 
-import store from "./app/store";
+import store from "./store/store.js";
 import App from "./App";
 import "./index.css";
 
