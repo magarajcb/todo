@@ -1,5 +1,5 @@
-const express = require("express");
-const taskController = require("./task.controller");
+import express from "express"
+import * as taskController from "./task.controller.js";
 
 const router = express.Router();
 
@@ -18,4 +18,4 @@ router.put("/:id", taskController.updateTask);
 
 router.delete("/:id", taskController.deleteTask);
 
-module.exports = router;
+export default router

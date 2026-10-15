@@ -1,5 +1,5 @@
 
-const taskRepo=require("./task.repository")
+import * as taskRepo from "./task.repository.js";
 const createTsk=async (data)=>{
     return taskRepo.createTask({
         title:data.title.trim(),
@@ -23,6 +23,6 @@ const deleteTsk=async (id)=>{
    const task= await taskRepo.deleteTask(id)
    return task
 }
-module.exports={
+export{
     createTsk,getTsk,updateTsk,deleteTsk,getTskById
 }

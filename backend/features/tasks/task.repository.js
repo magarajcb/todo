@@ -1,4 +1,4 @@
-const Task=require("./task.model")
+import Task from "./task.model.js"
 const createTask=async (data)=>{
     return await Task.create(data)
 }
@@ -14,4 +14,4 @@ const updateTask=async (id,update)=>{
 const deleteTask=async (id)=>{
     return await Task.findByIdAndDelete(id)
 }
-module.exports={createTask,getTask, findTask,updateTask,deleteTask}
+export{createTask,getTask, findTask,updateTask,deleteTask}

@@ -24,8 +24,8 @@ function TaskForm() {
 
     try {
       const taskData = {
-        ...formData,
-        dueDate: new Date(formData.dueDate).toISOString(),
+        ...formData
+     
       };
 
       if (editingTaskId) {

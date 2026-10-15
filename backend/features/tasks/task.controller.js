@@ -1,5 +1,5 @@
-const { get } = require("mongoose")
-const taskService=require("./task.service")
+// const { get } = require("mongoose")
+import * as taskService from "./task.service.js";
 const createTask=async(req,res)=>{
     try{
         const task=await taskService.createTsk(req.body)
@@ -69,7 +69,7 @@ const deleteTask=async (req,res)=>{
     });
   }
 }
-module.exports = {
+export  {
   createTask,
   getTask,
   getTaskById,
